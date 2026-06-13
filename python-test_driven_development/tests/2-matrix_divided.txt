@@ -59,3 +59,13 @@ Test div is nan:
 Test matrix with negative numbers:
     >>> matrix_divided([[-1, -2], [-3, -4]], 2)
     [[-0.5, -1.0], [-1.5, -2.0]]
+
+Test missing div argument:
+    >>> matrix_divided([[1, 2], [3, 4]])
+    Traceback (most recent call last):
+    TypeError: matrix_divided() missing 1 required positional argument: 'div'
+
+Test missing both arguments:
+    >>> matrix_divided()
+    Traceback (most recent call last):
+    TypeError: matrix_divided() missing 2 required positional arguments: 'matrix' and 'div'
