@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Module defining Shape abstract class, circle, rectangle, and shape_info"""
+"""Module defining Shape abstract class, Circle, Rectangle and shape_info"""
 from abc import ABC, abstractmethod
 import math
 
@@ -9,12 +9,12 @@ class Shape(ABC):
 
     @abstractmethod
     def area(self):
-        """Abstract for calculating area"""
+        """Abstract method for calculating area"""
         pass
 
     @abstractmethod
     def perimeter(self):
-        """Abstract for calculating perimeter"""
+        """Abstract method for calculating perimeter"""
         pass
 
 
@@ -26,12 +26,12 @@ class Circle(Shape):
         self.radius = radius
 
     def area(self):
-        """Returns peimeter of the circle"""
-        return math.pi * self.radius ** 2
+        """Returns area of the circle"""
+        return abs(math.pi * self.radius ** 2)
 
     def perimeter(self):
         """Returns perimeter of the circle"""
-        return 2 * math.pi * self.radius
+        return abs(2 * math.pi * self.radius)
 
 
 class Rectangle(Shape):
