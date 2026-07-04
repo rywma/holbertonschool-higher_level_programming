@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Script that reads stdin line by line and computes log statistics"""
+"""Script that reads stdin line by line and computes log statistics."""
 import sys
 
 
@@ -40,3 +40,5 @@ if __name__ == "__main__":
     except KeyboardInterrupt:
         print_stats(total_size, status_codes)
         raise
+    else:
+        print_stats(total_size, status_codes)
